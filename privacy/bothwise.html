@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BothWise · Informativa sulla privacy</title>
+<meta name="description" content="Informativa sulla privacy di BothWise, l'app di CrsLabs che tiene uguali le cartelle sui tuoi dispositivi.">
+<link rel="stylesheet" href="../stile.css">
+</head>
+<body>
+<header class="sito"><a href="../">Crs<span>Labs</span></a></header>
+<main>
+  <h1>BothWise · Informativa sulla privacy</h1>
+  <p class="sotto">Ultimo aggiornamento: 23 novembre 2026 · <a href="#en">English version below</a></p>
+
+  <p>BothWise tiene uguali delle cartelle sui tuoi telefoni e tablet. È fatta per <b>non raccogliere dati</b>: non ha account propri, non ha pubblicità, non usa servizi di analisi o di tracciamento e CrsLabs non ha server che ricevono i tuoi file.</p>
+
+  <h2>Quali dati tratta e dove restano</h2>
+  <ul>
+    <li><b>I tuoi file</b> restano nelle cartelle che scegli tu, sui tuoi dispositivi. BothWise li copia solo verso i dispositivi che hai <b>abbinato</b> tu, con un codice o un QR.</li>
+    <li>Nella stessa Wi‑Fi i file passano <b>direttamente</b> da un dispositivo all'altro, con un collegamento cifrato (TLS 1.3). Non passano da nessun server.</li>
+    <li>Le impostazioni, i nomi dei dispositivi abbinati e le chiavi stanno nella memoria privata dell'app; le chiavi sono protette dal Keystore di Android.</li>
+  </ul>
+
+  <h2>Fuori dalla Wi‑Fi: Google Drive o Dropbox (facoltativo)</h2>
+  <p>Se lo scegli tu, in Impostazioni → «Fuori dalla Wi‑Fi», BothWise può usare il <b>tuo</b> Google Drive oppure il <b>tuo</b> Dropbox come <b>cassetta delle lettere cifrata</b>, per far arrivare i file ai tuoi dispositivi anche quando non sono nella stessa rete.</p>
+  <ul>
+    <li><b>Cosa scrive:</b> solo file <b>cifrati</b> sui tuoi dispositivi prima di partire (AES‑256‑GCM), con nomi che non rivelano niente. La chiave non lascia mai i tuoi dispositivi: Google, Dropbox e CrsLabs non possono leggere il contenuto né i nomi dei tuoi file.</li>
+    <li><b>Dove scrive:</b> su Google Drive solo nella cartella creata da BothWise («BothWise - casella cifrata»); su Dropbox solo nella cartella dell'app (di solito «App/BothWise»).</li>
+    <li><b>Cosa può vedere del tuo account:</b> con Google Drive BothWise chiede soltanto il permesso <code>drive.file</code>, cioè l'accesso ai <b>soli file creati dall'app</b>: non vede né tocca gli altri tuoi file. Con Dropbox l'accesso è limitato alla cartella dell'app.</li>
+    <li><b>Dove resta l'accesso:</b> il permesso di accesso (token) è conservato cifrato sul dispositivo e non viene mandato a nessun altro. «Scollega» lo revoca presso Google o Dropbox; puoi revocarlo anche dalle impostazioni del tuo account Google (myaccount.google.com → Sicurezza → App di terze parti) o Dropbox (Impostazioni → App collegate).</li>
+    <li><b>Cancellare:</b> la cartella creata da BothWise puoi cancellarla quando vuoi dal tuo Drive o Dropbox; contiene solo dati cifrati che senza i tuoi dispositivi non servono a niente.</li>
+  </ul>
+  <div class="nota">L'uso e il trasferimento a qualsiasi altra app delle informazioni ricevute dalle API di Google da parte di BothWise rispetta le <a href="https://developers.google.com/terms/api-services-user-data-policy">Norme sui dati utente dei servizi API di Google</a>, inclusi i requisiti di Uso limitato. BothWise usa l'accesso a Google Drive solo per la cassetta cifrata descritta qui sopra; non vende, non trasferisce e non usa questi dati per pubblicità, profilazione o addestramento di modelli, e nessuna persona li legge.</div>
+
+  <h2>Quando l'app usa internet</h2>
+  <ul>
+    <li><b>Google Drive o Dropbox</b>, solo se li hai collegati tu (vedi sopra). L'opzione «Anche con la rete mobile» decide se possono usare i dati del telefono.</li>
+    <li><b>Controllo degli aggiornamenti</b> (si può spegnere in Impostazioni → Aggiornamenti): una volta a settimana l'app legge da GitHub qual è l'ultima versione pubblicata. Non invia nessun tuo dato; GitHub, come ogni sito, vede l'indirizzo internet del dispositivo.</li>
+    <li><b>Segnala un problema o un'idea</b>: l'app prepara una mail; la spedisci tu, con la tua app di posta, e solo allora arriva a crslabs.info@gmail.com. Puoi vedere prima tutto il testo; le informazioni tecniche (versione, telefono, ultimi errori, com'è andata l'ultima sincronizzazione) non contengono i tuoi file né i nomi delle tue cartelle e si possono togliere.</li>
+    <li><b>Sostieni BothWise</b>: apre la pagina Ko-fi nel browser solo se la tocchi.</li>
+  </ul>
+
+  <h2>Permessi di Android</h2>
+  <ul>
+    <li><b>Rete e Wi‑Fi</b>: per trovare i tuoi dispositivi abbinati nella rete e scambiare i file.</li>
+    <li><b>Posizione</b> (solo se scegli le «reti di fiducia»): Android la chiede per far leggere all'app il <b>nome</b> della Wi‑Fi. BothWise non legge né conserva la tua posizione.</li>
+    <li><b>Fotocamera</b>: per inquadrare il codice QR di abbinamento.</li>
+    <li><b>Notifiche e servizio in primo piano</b>: per restare raggiungibile negli orari che scegli e per chiederti conferme quando l'app è chiusa.</li>
+    <li><b>Impronta / PIN</b>: per il blocco dell'app, se lo attivi.</li>
+    <li><b>Installare app</b>: per installare gli aggiornamenti (Android chiede sempre la conferma).</li>
+    <li>L'accesso alle cartelle è solo quello che concedi tu, cartella per cartella, con il selettore di Android.</li>
+  </ul>
+
+  <h2>Cancellare i dati</h2>
+  <p>Impostazioni → Sicurezza e dati → «Cancella tutto da questo dispositivo» toglie abbinamenti, chiavi, impostazioni e collegamenti a Drive o Dropbox; le tue cartelle e i tuoi file restano dove sono. Oppure disinstalla l'app.</p>
+
+  <h2>Minori</h2>
+  <p>BothWise non è pensata per i minori di 13 anni e non raccoglie consapevolmente dati di nessuno.</p>
+
+  <h2>Modifiche e contatti</h2>
+  <p>Se questa informativa cambia, la data in alto viene aggiornata. Titolare: CrsLabs · <a href="mailto:crslabs.info@gmail.com">crslabs.info@gmail.com</a></p>
+
+  <hr>
+
+  <h1 id="en">BothWise · Privacy policy</h1>
+  <p class="sotto">Last updated: 23 November 2026</p>
+  <p>BothWise keeps folders the same on your phones and tablets. It is built to <b>collect no data</b>: no accounts of its own, no ads, no analytics or tracking, and CrsLabs has no servers that receive your files.</p>
+  <h2>What data it handles and where it stays</h2>
+  <ul>
+    <li><b>Your files</b> stay in the folders you choose, on your devices. BothWise copies them only to devices you have <b>paired</b> yourself with a code or QR.</li>
+    <li>On the same Wi‑Fi, files go <b>directly</b> from one device to another over an encrypted connection (TLS 1.3), with no server in between.</li>
+    <li>Settings, names of paired devices and keys stay in the app's private storage; keys are protected by the Android Keystore.</li>
+  </ul>
+  <h2>Away from Wi‑Fi: Google Drive or Dropbox (optional)</h2>
+  <p>Only if you turn it on (Settings → «Away from Wi‑Fi»), BothWise can use <b>your</b> Google Drive or <b>your</b> Dropbox as an <b>encrypted mailbox</b> so files reach your devices when they are not on the same network.</p>
+  <ul>
+    <li><b>What it writes:</b> only data <b>encrypted on your devices</b> before it leaves (AES‑256‑GCM), with names that reveal nothing. The key never leaves your devices: Google, Dropbox and CrsLabs cannot read the content or the names of your files.</li>
+    <li><b>Where:</b> on Google Drive only in the folder BothWise creates («BothWise - casella cifrata»); on Dropbox only in the app folder (usually «Apps/BothWise»).</li>
+    <li><b>Access to your account:</b> on Google Drive BothWise requests only the <code>drive.file</code> scope, i.e. access <b>only to files the app created</b>; it cannot see or change your other files. On Dropbox access is limited to the app folder.</li>
+    <li><b>Access tokens</b> are stored encrypted on the device and never sent anywhere else. «Disconnect» revokes them; you can also revoke access from your Google account (myaccount.google.com → Security → Third-party apps) or Dropbox (Settings → Connected apps).</li>
+    <li><b>Deleting:</b> you can delete the BothWise folder from your Drive or Dropbox at any time; it only holds encrypted data that is useless without your devices.</li>
+  </ul>
+  <div class="nota">BothWise's use and transfer to any other app of information received from Google APIs will adhere to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements. BothWise uses Google Drive access only for the encrypted mailbox described above; it does not sell or transfer this data, does not use it for advertising, profiling or training models, and no person reads it.</div>
+  <h2>When the app uses the internet</h2>
+  <ul>
+    <li><b>Google Drive or Dropbox</b>, only if you connected them. «Also on mobile data» decides whether they may use mobile data.</li>
+    <li><b>Update check</b> (can be turned off in Settings → Updates): once a week the app reads the latest published version from GitHub. None of your data is sent; GitHub, like any website, sees the device's internet address.</li>
+    <li><b>Report a problem or an idea</b> prepares an email you send yourself to crslabs.info@gmail.com; technical information never includes your files or folder names and can be removed.</li>
+    <li><b>Support BothWise</b> opens Ko-fi in the browser only when tapped.</li>
+  </ul>
+  <h2>Android permissions</h2>
+  <ul>
+    <li><b>Network and Wi‑Fi</b>: to find your paired devices and exchange files.</li>
+    <li><b>Location</b> (only if you choose «trusted networks»): Android requires it for the app to read the Wi‑Fi <b>name</b>. BothWise does not read or store your location.</li>
+    <li><b>Camera</b>: to scan the pairing QR code.</li>
+    <li><b>Notifications and foreground service</b>: to stay reachable during the hours you choose and to ask for confirmations while the app is closed.</li>
+    <li><b>Fingerprint / PIN</b>: for the optional app lock. <b>Install apps</b>: for updates, always confirmed by Android.</li>
+    <li>Folder access is only what you grant, folder by folder, with the Android picker.</li>
+  </ul>
+  <h2>Deleting your data</h2>
+  <p>Settings → Security and data → «Erase everything from this device» removes pairings, keys, settings and Drive or Dropbox connections; your folders and files stay where they are. Or uninstall the app.</p>
+  <h2>Children, changes, contact</h2>
+  <p>BothWise is not directed at children under 13 and knowingly collects no one's data. If this policy changes, the date above is updated. Controller: CrsLabs · <a href="mailto:crslabs.info@gmail.com">crslabs.info@gmail.com</a></p>
+</main>
+<footer>© 2026 CrsLabs · <a href="../">crslabs.github.io</a></footer>
+</body>
+</html>

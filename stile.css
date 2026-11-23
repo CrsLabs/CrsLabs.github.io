@@ -1,0 +1,25 @@
+/* Sito di CrsLabs: pagine semplici, leggibili sul telefono, tema chiaro e scuro. Nessuno script, nessun servizio esterno. */
+:root { --fondo: #f8fafc; --carta: #ffffff; --testo: #1e293b; --tenue: #64748b; --bordo: #e2e8f0; --accento: #b45309; --accento-chiaro: #f59e0b; --link: #0369a1; }
+@media (prefers-color-scheme: dark) { :root { --fondo: #0f172a; --carta: #1e293b; --testo: #e2e8f0; --tenue: #94a3b8; --bordo: #334155; --accento: #f59e0b; --accento-chiaro: #fbbf24; --link: #7dd3fc; } }
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: var(--fondo); color: var(--testo); font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+main { max-width: 760px; margin: 0 auto; padding: 24px 16px 48px; }
+header.sito { display: flex; align-items: center; gap: 12px; padding: 12px 16px; max-width: 760px; margin: 0 auto; }
+header.sito a { color: var(--testo); text-decoration: none; font-weight: 800; font-size: 18px; }
+header.sito a span { color: var(--accento); }
+h1 { font-size: 28px; line-height: 1.25; margin: 8px 0 4px; }
+h2 { font-size: 20px; margin: 28px 0 8px; padding-bottom: 4px; border-bottom: 2px solid var(--accento-chiaro); }
+h3 { font-size: 17px; margin: 20px 0 6px; }
+p, li { overflow-wrap: anywhere; }
+a { color: var(--link); }
+.sotto { color: var(--tenue); margin: 0 0 16px; }
+.app { display: flex; gap: 14px; align-items: flex-start; background: var(--carta); border: 1px solid var(--bordo); border-radius: 14px; padding: 14px; margin: 12px 0; }
+.app img { width: 56px; height: 56px; border-radius: 12px; flex-shrink: 0; }
+.app h3 { margin: 0 0 4px; }
+.app p { margin: 0 0 6px; }
+.link-app { display: flex; flex-wrap: wrap; gap: 6px 14px; font-size: 15px; }
+.nota { background: var(--carta); border-left: 4px solid var(--accento-chiaro); padding: 10px 14px; border-radius: 0 10px 10px 0; margin: 14px 0; }
+.lingue { font-size: 15px; color: var(--tenue); }
+hr { border: 0; border-top: 1px solid var(--bordo); margin: 36px 0; }
+footer { color: var(--tenue); font-size: 14px; max-width: 760px; margin: 0 auto; padding: 0 16px 32px; }
