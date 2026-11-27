@@ -1,32 +1,45 @@
-<!doctype html><html lang="it"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>DoctorCar</title><meta name="description" content="Your car&#x27;s maintenance log, even without internet.">
-<style>:root{--c:#1f6feb;--bg:#fff;--t:#1d2430;--g:#f3f5f8}@media(prefers-color-scheme:dark){:root{--bg:#12161c;--t:#e8ecf2;--g:#1b212a}}
-*{box-sizing:border-box}body{margin:0;font:17px/1.5 system-ui,sans-serif;background:var(--bg);color:var(--t)}
-.w{max-width:960px;margin:auto;padding:0 16px}header{text-align:center;padding:40px 0 24px}header img{width:96px;border-radius:22px}
-h1{font-size:2.2rem;margin:.4em 0 .1em}.s{font-size:1.15rem;opacity:.85;margin:0 auto 20px;max-width:560px}
-.b{display:inline-block;background:var(--c);color:#fff;text-decoration:none;padding:14px 28px;border-radius:12px;font-weight:600}
-.sm{font-size:.85rem;opacity:.7;margin-top:10px}.sh{display:flex;gap:12px;overflow-x:auto;padding:12px 0;justify-content:center;flex-wrap:wrap}.sh img{width:200px;border-radius:14px;box-shadow:0 2px 12px #0003}
-.g{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px;padding:20px 0}.p{background:var(--g);border-radius:14px;padding:16px}.p h3{margin:0 0 6px;color:var(--c)}.p p{margin:0}
-footer{text-align:center;padding:30px 0;opacity:.7;font-size:.9rem}.l{position:absolute;top:10px;right:14px}.l button{border:1px solid var(--c);background:none;color:var(--t);border-radius:8px;padding:4px 10px;cursor:pointer}
-.en{display:none}html[lang=en] .en{display:inline}html[lang=en] .it{display:none}html[lang=en] img.en{display:inline}.p h3 span,.p p span{display:inline}.car{position:relative;max-width:270px;margin:8px auto 18px}.car .t{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;border-radius:18px;scroll-behavior:smooth}.car .t::-webkit-scrollbar{display:none}
-.car .t img{flex:0 0 100%;width:100%;scroll-snap-align:center;border-radius:18px;box-shadow:none;object-fit:contain}
-.car .a{position:absolute;top:45%;width:40px;height:40px;border-radius:50%;border:0;background:var(--c);color:#fff;font-size:22px;line-height:1;cursor:pointer;opacity:.9}.car .pr{left:-8px}.car .nx{right:-8px}
-.car .d{display:flex;justify-content:center;gap:8px;margin-top:10px}.car .d i{width:9px;height:9px;border-radius:50%;background:var(--t);opacity:.25;transition:.2s}.car .d i.on{background:var(--c);opacity:1;transform:scale(1.25)}
-@media(min-width:700px){.car{max-width:290px}.car .pr{left:-56px}.car .nx{right:-56px}}.vid{padding:8px 0 4px}.vid h2{text-align:center;font-size:1.3rem;margin:.6em 0}.vr{display:flex;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;padding:6px 4px 14px;justify-content:safe center;scrollbar-width:thin}
-.vc{flex:0 0 min(236px,72vw);scroll-snap-align:center;background:var(--g);border-radius:16px;padding:10px;text-align:center}.vc video{width:100%;border-radius:12px;display:block;background:#000;aspect-ratio:412/860;cursor:pointer}.vc h3{margin:10px 0 2px;font-size:1rem;color:var(--c)}</style></head><body>
-<div class="l"><a href="../../" style="margin-right:10px;color:inherit">CrsLabs</a><a href="en.html" style="color:inherit;border:1px solid var(--c);border-radius:8px;padding:4px 10px;text-decoration:none">English</a></div>
-<div class="w"><header><img src="logo.png" alt="DoctorCar"><h1>DoctorCar</h1>
-<p class="s"><span class="it">Il libretto di manutenzione della tua auto, anche senza internet.</span></p>
-<a class="b" href="https://github.com/CrsLabs/DoctorCar/releases/latest"><span class="it">Scarica per Android</span></a>
-<div class="sm"><span class="it">Gratis · open source · senza account · funziona offline · Android 10+</span></div></header>
-<div class="car"><div class="t"><img class="it" src="img/it-01-home.png" alt=""><img class="it" src="img/it-04-scadenze.png" alt=""><img class="it" src="img/it-08-scheda-veicolo.png" alt=""><img class="it" src="img/it-05-rifornimenti.png" alt=""></div><button class="a pr" aria-label="Precedente">‹</button><button class="a nx" aria-label="Successiva">›</button><div class="d"></div></div><div class="vid"><h2>Guarda come funziona</h2><div class="vr"><div class="vc"><video muted loop playsinline preload="metadata" poster="video/it/scadenze.jpg" src="video/it/scadenze.mp4"></video><h3>Le scadenze</h3></div><div class="vc"><video muted loop playsinline preload="metadata" poster="video/it/rifornimento.jpg" src="video/it/rifornimento.mp4"></video><h3>Rifornimenti e consumo</h3></div><div class="vc"><video muted loop playsinline preload="metadata" poster="video/it/viaggio.jpg" src="video/it/viaggio.mp4"></video><h3>Costo di un viaggio</h3></div></div></div><div class="g"><div class="p"><h3><span class="it">Mai più scadenze dimenticate</span></h3><p><span class="it">Bollo, assicurazione, revisione, tagliando: ti avvisa in tempo e conosce le regole italiane.</span></p></div><div class="p"><h3><span class="it">Quanto costa davvero la tua auto</span></h3><p><span class="it">Consumo reale tra due rifornimenti, spese mese per mese, costo al chilometro.</span></p></div><div class="p"><h3><span class="it">Tutta la storia in tasca</span></h3><p><span class="it">Ogni intervento con data, km, officina, costo e foto delle fatture; libretto in PDF utile quando vendi.</span></p></div><div class="p"><h3><span class="it">Famiglie con più auto</span></h3><p><span class="it">Ognuno registra dal proprio telefono e i dati restano uguali per tutti, senza cloud.</span></p></div></div>
-<footer><span class="it">I tuoi dati restano sul tuo dispositivo. Nessuna pubblicità, nessun tracciamento.</span><br><a href="../../privacy/doctorcar.html" style="color:inherit">Privacy</a> · <a href="https://github.com/CrsLabs/DoctorCar" style="color:inherit">GitHub</a> · © CrsLabs · GPL-3.0</footer></div>
-<script>(function(){var c=document.querySelector('.car'),t=c.querySelector('.t'),n=t.children.length,d=c.querySelector('.d');
-for(var i=0;i<n;i++){var e=document.createElement('i');d.appendChild(e)}
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DoctorCar · CrsLabs</title>
+<meta name="description" content="Il libretto di manutenzione della tua auto, anche senza internet.">
+<meta name="theme-color" content="#2563eb">
+<link rel="stylesheet" href="../../stile.css">
+</head>
+<body style="--acc:#2563eb">
+<header class="nav"><div class="in"><a class="marca" href="../../">Crs<span>Labs</span></a>
+<nav><a href="../../#app">App</a><a class="lingua" href="en.html">English</a></nav></div></header>
+<main>
+<section class="eroe"><div class="in due">
+<div class="testo"><img class="logo" src="logo.png" alt="DoctorCar" width="72" height="72">
+<h1>DoctorCar</h1><p class="tag">Il libretto di manutenzione della tua auto, anche senza internet.</p><p class="lead">Interventi, scadenze, rifornimenti e spese sempre sotto controllo, in italiano e in inglese, senza account.</p>
+<div class="azioni"><a class="bott" href="https://github.com/CrsLabs/DoctorCar/releases/latest"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12M7 10l5 5 5-5M4 21h16"/></svg>Scarica per Android</a><a class="bott sec" href="https://github.com/CrsLabs/DoctorCar">Codice sorgente</a></div>
+<ul class="chip"><li>Gratis</li><li>Open source</li><li>Senza account</li><li>Funziona offline</li><li>Android 10+</li></ul></div>
+<div class="car"><div class="t"><img src="img/it-01-home.png" alt="" loading="lazy"><img src="img/it-04-scadenze.png" alt="" loading="lazy"><img src="img/it-08-scheda-veicolo.png" alt="" loading="lazy"><img src="img/it-05-rifornimenti.png" alt="" loading="lazy"></div><button class="a pr" aria-label="‹">‹</button><button class="a nx" aria-label="›">›</button><div class="d"></div></div>
+</div></section>
+<section class="sez"><div class="in"><h2>Cosa sa fare</h2><div class="griglia">
+<div class="scheda"><span class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 16V11a6 6 0 0 1 12 0v5l2 2H4zM10 21h4"/></svg></span><h3>Mai più scadenze dimenticate</h3><p>Bollo, assicurazione, revisione, tagliando: ti avvisa in tempo e conosce le regole italiane.</p></div>
+<div class="scheda"><span class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20V4M4 20h16M8 16v-5M12 16V8M16 16v-8"/></svg></span><h3>Quanto costa davvero la tua auto</h3><p>Consumo reale tra due rifornimenti, spese mese per mese, costo al chilometro.</p></div>
+<div class="scheda"><span class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 2h8l5 5v15H6zM14 2v5h5"/></svg></span><h3>Tutta la storia in tasca</h3><p>Ogni intervento con data, km, officina, costo e foto delle fatture. Libretto in PDF, utile quando vendi.</p></div>
+<div class="scheda"><span class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16 20v-2a4 4 0 0 0-8 0v2M12 13a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM22 20v-2a3 3 0 0 0-3-2M17 5a3 3 0 0 1 0 6"/></svg></span><h3>Famiglie con più auto</h3><p>Ognuno registra dal proprio telefono e i dati restano uguali per tutti, senza cloud.</p></div>
+<div class="scheda"><span class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 21V4h9v17M4 21h9M13 8h3l3 3v8a1.5 1.5 0 0 1-3 0v-5"/></svg></span><h3>Costo di un viaggio</h3><p>Calcola quanto costa un percorso in base al tuo consumo reale.</p></div>
+<div class="scheda"><span class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a9 9 0 1 0 0 18 9 9 0 0 0 0-18zM3 12h18M12 3c3 3 3 15 0 18M12 3c-3 3-3 15 0 18"/></svg></span><h3>Italiano e inglese</h3><p>Guida e tutorial integrati nell'app.</p></div>
+</div></div></section>
+<section class="sez alt"><div class="in"><h2>Guarda come funziona</h2><p class="sub">Brevi filmati, senza audio.</p><div class="vr"><div class="vc"><video muted loop playsinline preload="metadata" poster="video/it/scadenze.jpg" src="video/it/scadenze.mp4"></video><h3>Le scadenze</h3></div><div class="vc"><video muted loop playsinline preload="metadata" poster="video/it/rifornimento.jpg" src="video/it/rifornimento.mp4"></video><h3>Rifornimenti e consumo</h3></div><div class="vc"><video muted loop playsinline preload="metadata" poster="video/it/viaggio.jpg" src="video/it/viaggio.mp4"></video><h3>Costo di un viaggio</h3></div></div></div></section>
+<section class="sez"><div class="in"><h2>Come si inizia</h2><ol class="passi"><li><b>Installa</b><span>Scarica DoctorCar e apri l'app.</span></li><li><b>Aggiungi l'auto</b><span>Inserisci targa, modello e chilometri.</span></li><li><b>Registra</b><span>Scadenze, interventi e rifornimenti: l'app fa i conti per te.</span></li></ol></div></section>
+<section class="sez alt"><div class="in stretto"><h2>Domande frequenti</h2><details><summary>Posso usarlo con più auto?</summary><p>Sì, quante ne vuoi, anche con la scheda di ciascun veicolo.</p></details><details><summary>Funziona senza internet?</summary><p>Sempre. Non serve nessuna connessione per usarlo.</p></details><details><summary>Quanto costa?</summary><p>Niente. Le app sono gratuite, senza pubblicità e senza acquisti. Se ti sono utili puoi offrire un caffè su ko-fi.com/crslabs.</p></details><details><summary>Dove finiscono i miei dati?</summary><p>Restano sul tuo dispositivo. CrsLabs non ha server e non raccoglie nulla. I dettagli sono nell'informativa sulla privacy.</p></details><details><summary>Come si installa e come si aggiorna?</summary><p>Scarica il file dalla pagina «Release» su GitHub e aprilo: Android ti chiederà di consentire l'installazione da quella fonte. Gli aggiornamenti successivi ti vengono proposti dentro l'app e si installano sopra la versione vecchia, senza perdere i dati.</p></details><details><summary>Qualcosa non funziona o ho un'idea.</summary><p>Scrivi a crslabs.info@gmail.com oppure usa «Segnala un problema o un'idea» dentro l'app.</p></details></div></section>
+</main>
+<footer class="piede"><div class="in"><p>I tuoi dati restano sul tuo dispositivo. Nessuna pubblicità, nessun tracciamento.</p><p><a href="../../privacy/doctorcar.html">Informativa sulla privacy</a> · <a href="https://github.com/CrsLabs/DoctorCar">GitHub</a> · <a href="mailto:crslabs.info@gmail.com">Contatti</a> · <a href="https://ko-fi.com/crslabs">Ko‑fi</a></p><p class="pic">© 2026 CrsLabs · GPL‑3.0</p></div></footer>
+<script>(function(){var c=document.querySelector('.car');if(c){var t=c.querySelector('.t'),n=t.children.length,d=c.querySelector('.d');
+for(var i=0;i<n;i++){d.appendChild(document.createElement('i'))}
 function cur(){return Math.round(t.scrollLeft/t.clientWidth)}
 function agg(){var k=cur();[].forEach.call(d.children,function(e,i){e.className=i==k?'on':''})}
 function vai(k){t.scrollTo({left:Math.max(0,Math.min(n-1,k))*t.clientWidth})}
 t.addEventListener('scroll',agg);agg();
-c.querySelector('.pr').onclick=function(){vai(cur()-1)};c.querySelector('.nx').onclick=function(){vai(cur()+1)};})()</script><script>(function(){var v=[].slice.call(document.querySelectorAll('.vc video'));if(!v.length)return;
+c.querySelector('.pr').onclick=function(){vai(cur()-1)};c.querySelector('.nx').onclick=function(){vai(cur()+1)};}
+var v=[].slice.call(document.querySelectorAll('.vc video'));if(!v.length)return;
 v.forEach(function(e){e.addEventListener('click',function(){e.paused?e.play():e.pause()})});
-if(!('IntersectionObserver'in window))return;var o=new IntersectionObserver(function(es){es.forEach(function(x){var e=x.target;if(x.isIntersecting&&x.intersectionRatio>=.6){var p=e.play();p&&p.catch&&p.catch(function(){})}else e.pause()})},{threshold:[0,.6]});v.forEach(function(e){o.observe(e)})})()</script></body></html>
+if(!('IntersectionObserver'in window))return;var o=new IntersectionObserver(function(es){es.forEach(function(x){var e=x.target;if(x.isIntersecting&&x.intersectionRatio>=.6){var p=e.play();p&&p.catch&&p.catch(function(){})}else e.pause()})},{threshold:[0,.6]});v.forEach(function(e){o.observe(e)})})()</script>
+</body></html>
